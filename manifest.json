@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DownlSoft",
+  "version": "1.0",
+  "action": {
+    "default_icon": "icon1.png",
+    "default_popup": "index.html"
+  },
+	"permissions": ["activeTab", "downloads"],
+	"content_scripts": [
+			{
+				"js": ["script/background.js"],
+				"matches": [
+					"https://www.youtube.com/*"
+				]
+			}
+		]
+}
